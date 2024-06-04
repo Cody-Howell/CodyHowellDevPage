@@ -1,0 +1,12 @@
+@use "Library";
+
+@mixin import {
+  #challengePage {
+    @include Library.mainPageFormat();
+    .timeFrameElement {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 0 0 10px 10px;
+    }
+  }
+}

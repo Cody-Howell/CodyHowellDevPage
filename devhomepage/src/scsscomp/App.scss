@@ -1,9 +1,39 @@
+@use "Library"; @use "Home"; @use "Challenges";
+
+
 body, html {
   padding: 0;
   margin: 0;
 }
 
-h1 {
-  background-color: rgb(113, 39, 113);
-  color: white;
+#App {
+  display: grid;
+  grid-template-rows: 120px 1fr;
 }
+
+#header {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 100px;
+  background: linear-gradient(12deg, Library.$secondary-color-800, Library.$primary-color-800);
+  img {
+    height: 80%;
+    border-radius: 10px;
+  }
+  #navbar {
+    padding-left: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: black;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  }
+}
+
+@include Home.import();
+@include Challenges.import();
