@@ -34,6 +34,7 @@ class Header extends React.Component {
         <nav id='navbar'>
           <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
+          <Link to="/challenges">Challenges</Link>
         </nav>
       </div>
     )
