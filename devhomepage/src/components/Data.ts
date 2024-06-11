@@ -1,11 +1,13 @@
 let timeframe1Array: Array<any> = []; // Make sure to load in ordered form, it will flip in the results so newest is at the top
 timeframe1Array.push({
-  title: "What do we do?",
-  number: 0,
-  description: "Submit coding ideas to codyhowell44@gmail.com, or contact the person you heard about this from.",
-  codyLink: "",
+  title: "Develop a Retro Game",
+  number: 1,
+  description: "Recreate a classic retro game in JS, Java, Python, or C#. It should have a visible display to play from. Suggestions are: Tetris, Asteroids, Pac-man, Space Invaders, Snake, Centipede, Missile Command, Mario, or any more you can think of. ",
+  codyLink: "https://github.com/Cody-Howell/SC2024-RetroGame",
   taftLink: "",
-  jesseLink: ""
+  jesseLink: "",
+  starDates: ["6/13/2024", "6/18/2024", "6/21/2024", "No Date Set"],
+  dueDate: "6/24/2024"
 });
 
 

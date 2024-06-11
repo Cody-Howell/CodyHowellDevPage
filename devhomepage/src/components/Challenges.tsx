@@ -52,6 +52,24 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
       <div className='challengeElement' >
         <h2>{challenge.title}: Task #{String(challenge.number)}</h2>
         <p>{challenge.description}</p>
+        <p>For now: Create a GitHub repo with the account (you can use the format "SC2024-<i>challenge</i>") to host your code.</p>
+        <p>We're doing 4 stars for each challenge, as listed below. </p>
+        <ol>
+          <li>Hello World program - program compiles and runs, maybe has a button.</li>
+          <li>Minimum Viable Product - program can be shown for testing. </li>
+          <li>Release version - show a stranger for feedback</li>
+          <li>Polish version - has everything you want from it</li>
+        </ol>
+        <h3>Star due dates </h3>
+        <p>Star 1: {challenge.starDates[0]}</p>
+        <p>Star 2: {challenge.starDates[1]}</p>
+        <p>Star 3: {challenge.starDates[2]}</p>
+        <p>Star 4: {challenge.starDates[3]}</p>
+
+        <p>The next challenge will be posted on: {challenge.dueDate}</p>
+
+        <h2>GitHub Links</h2>
+        <p>As people get their pages up, they will be linked to here: </p>
         {challenge.codyLink !== "" && (<a href={challenge.codyLink}>Cody's Link</a>)}
         {challenge.taftLink !== "" && (<a href={challenge.taftLink}>Taft's Link</a>)}
         {challenge.jesseLink !== "" && (<a href={challenge.jesseLink}>Jesse's Link</a>)}
