@@ -47,4 +47,9 @@ body, html {
   border: 1px solid black;
   border-radius: 10px;
   padding: 0 0 10px 10px;
+  cursor: pointer;
+}
+#challengePage .timeFrameElement .challengeElement {
+  cursor: default;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=App.css.map */

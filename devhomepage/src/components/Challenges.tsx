@@ -38,7 +38,7 @@ class TimeFrame extends React.Component<{challenges: Array<ChallengeType>, title
     }
     return(
       <div className='timeFrameElement' onClick={this.handleOpen}>
-        <h1>{this.props.title}</h1>
+        <h1>{this.props.title} {this.state.open ? (<span>&#x25B2;</span>) : (<span>&#x25BC;</span>)}</h1>
         {this.state.open && (challengeObjects)}
       </div>
     )
@@ -48,6 +48,15 @@ class TimeFrame extends React.Component<{challenges: Array<ChallengeType>, title
 class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
   render() {
     let challenge = this.props.challenge;
+    let codyStars: React.ReactNode[] = []; 
+    for (let i = 0; i < 4; i++) {
+      if (challenge.codyStars > i){
+        codyStars.push(<span>&#9733;</span>);
+      } else {
+        codyStars.push(<span>&#9734;</span>);
+      }
+    }
+    
     return(
       <div className='challengeElement' >
         <h2>{challenge.title}: Task #{String(challenge.number)}</h2>
@@ -70,7 +79,7 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
 
         <h2>GitHub Links</h2>
         <p>As people get their pages up, they will be linked to here: </p>
-        {challenge.codyLink !== "" && (<a href={challenge.codyLink}>Cody's Link</a>)}
+        {challenge.codyLink !== "" && (<a href={challenge.codyLink}>Cody's Link {codyStars}</a>)}
         {challenge.taftLink !== "" && (<a href={challenge.taftLink}>Taft's Link</a>)}
         {challenge.jesseLink !== "" && (<a href={challenge.jesseLink}>Jesse's Link</a>)}
 

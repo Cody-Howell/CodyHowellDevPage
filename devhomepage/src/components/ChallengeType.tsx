@@ -1,8 +1,9 @@
 export type ChallengeType = {
   title: string;
-  number: Number;
+  number: number;
   description: string;
   codyLink: string;
+  codyStars: number;
   taftLink: string;
   jesseLink: string;
   starDates: Array<string>;
