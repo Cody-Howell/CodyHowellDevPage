@@ -1,6 +1,6 @@
 import React from 'react';
 import './scsscomp/App.css';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link, HashRouter } from 'react-router-dom';
 import profilePicture from './ProfilePictureDiscord.png';
 import { Home } from './components/Home';
 import { Challenges } from './components/Challenges.tsx';
@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="App">
-        <BrowserRouter>
+        <HashRouter>
           <Header />
           <Routes>
             <Route index element={<Home />} />
@@ -17,7 +17,7 @@ class App extends React.Component {
             <Route path='/projects' element={<Projects />} />
             
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
