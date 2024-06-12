@@ -6,23 +6,30 @@ import { Home } from './components/Home';
 import { Challenges } from './components/Challenges.tsx';
 
 class App extends React.Component {
-  constructor(props){
-    super(props);
-    document.title = "Cody Howell Dev";
-  }
-
   render() {
     return (
       <div id="App">
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route index element={<Home />} />
             <Route path='/challenges' element={<Challenges />} />
+            <Route path='/projects' element={<Projects />} />
+            
           </Routes>
         </BrowserRouter>
       </div>
     );
+  }
+}
+
+class Projects extends React.Component {
+  render() {
+    return(
+      <div id='projectPage'>
+        <h1>Projects</h1>
+      </div>
+    )
   }
 }
 
