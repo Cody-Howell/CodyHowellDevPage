@@ -6,7 +6,7 @@ timeframe1Array.push({
   number: 1,
   description: "Recreate a classic retro game in JS, Java, Python, or C#. It should have a visible display to play from. Suggestions are: Tetris, Asteroids, Pac-man, Space Invaders, Snake, Centipede, Missile Command, Mario, or any more you can think of. ",
   codyLink: "https://github.com/Cody-Howell/SC2024-RetroGame",
-  codyStars: 1,
+  codyStars: 2,
   taftLink: "",
   taftStars: 0, 
   jesseLink: "",
