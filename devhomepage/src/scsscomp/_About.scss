@@ -1,0 +1,7 @@
+@use "Library";
+
+@mixin import {
+  #aboutPage {
+    @include Library.mainPageFormat();
+  }
+}

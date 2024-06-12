@@ -5,14 +5,14 @@ import { timeframe1Array } from './Data.ts'
 export class Challenges extends React.Component {
   render() {
     let renderArray: React.ReactNode[] = [];
-    renderArray.push(<TimeFrame title="Summer 2024" challenges={timeframe1Array} key={"Tada"}/>);
+    renderArray.push(<TimeFrame title="Summer 2024" challenges={timeframe1Array} key={"Summer2024"}/>);
 
     return (
       <div id='challengePage'>
         <h1>Challenges</h1>
         <p>This page will hold the links to GitHub repositories for each of the projects we do. Currently, there is only one group,
-          the Summer 2024 challenge group, consisting of Taft and Cody (as far as I know). We still need to decide what the challenges will be,
-          but then they will be posted to this page along with everyone's progress!</p>
+          the Summer 2024 challenge group, consisting of Taft, Cody, Jesse, Justin, and Jim. Challenges will be updated as time goes on, 
+          and you can email me your progress update at updates@codyhowell.dev to adjust the challenge. </p>
           {renderArray}
       </div>
     );
@@ -48,28 +48,19 @@ class TimeFrame extends React.Component<{challenges: Array<ChallengeType>, title
 class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
   render() {
     let challenge = this.props.challenge;
-    let codyStars: React.ReactNode[] = []; 
-    for (let i = 0; i < 4; i++) {
-      if (challenge.codyStars > i){
-        codyStars.push(<span>&#9733;</span>);
-      } else {
-        codyStars.push(<span>&#9734;</span>);
-      }
-    }
-    
     return(
       <div className='challengeElement' >
         <h2>{challenge.title}: Task #{String(challenge.number)}</h2>
         <p>{challenge.description}</p>
         <p>For now: Create a GitHub repo with the account (you can use the format "SC2024-<i>challenge</i>") to host your code.</p>
-        <p>We're doing 4 stars for each challenge, as listed below. </p>
+        <p>We're doing 4 stars for each challenge, as listed below. Email me when you complete a new star for your progress to be shown here. </p>
         <ol>
           <li>Hello World program - program compiles and runs, maybe has a button.</li>
           <li>Minimum Viable Product - program can be shown for testing. </li>
           <li>Release version - show a stranger for feedback</li>
           <li>Polish version - has everything you want from it</li>
         </ol>
-        <h3>Star due dates </h3>
+        <h3>Star Due Dates </h3>
         <p>Star 1: {challenge.starDates[0]}</p>
         <p>Star 2: {challenge.starDates[1]}</p>
         <p>Star 3: {challenge.starDates[2]}</p>
@@ -77,13 +68,26 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
 
         <p>The next challenge will be posted on: {challenge.dueDate}</p>
 
-        <h2>GitHub Links</h2>
+        <h3>GitHub Links</h3>
         <p>As people get their pages up, they will be linked to here: </p>
-        {challenge.codyLink !== "" && (<a href={challenge.codyLink}>Cody's Link {codyStars}</a>)}
-        {challenge.taftLink !== "" && (<a href={challenge.taftLink}>Taft's Link</a>)}
-        {challenge.jesseLink !== "" && (<a href={challenge.jesseLink}>Jesse's Link</a>)}
-
+        {challenge.taftLink !== "" && (<a href={challenge.taftLink}>Cody's Link {drawStars(challenge.taftStars)}</a>)}
+        {challenge.codyLink !== "" && (<a href={challenge.codyLink}>Cody's Link {drawStars(challenge.codyStars)}</a>)}
+        {challenge.jesseLink !== "" && (<a href={challenge.jesseLink}>Cody's Link {drawStars(challenge.jesseStars)}</a>)}
+        {challenge.justinLink !== "" && (<a href={challenge.justinLink}>Cody's Link {drawStars(challenge.justinStars)}</a>)}
+        {challenge.jimLink !== "" && (<a href={challenge.jimLink}>Cody's Link {drawStars(challenge.jimStars)}</a>)}
       </div>
     )
   }
+}
+
+function drawStars(num: number): React.ReactNode[]{
+  let returnStars: React.ReactNode[] = [];
+  for (let i = 0; i < 4; i++) {
+    if (num > i){
+      returnStars.push(<span>&#9733;</span>);
+    } else {
+      returnStars.push(<span>&#9734;</span>);
+    }
+  }
+  return returnStars;
 }

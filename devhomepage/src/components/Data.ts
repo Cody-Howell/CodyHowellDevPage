@@ -1,4 +1,6 @@
-let timeframe1Array: Array<any> = []; // Make sure to load in ordered form, it will flip in the results so newest is at the top
+import { ChallengeType } from "./ChallengeType";
+
+let timeframe1Array: Array<ChallengeType> = []; // Make sure to load in ordered form, it will flip in the results so newest is at the top
 timeframe1Array.push({
   title: "Develop a Retro Game",
   number: 1,
@@ -6,7 +8,13 @@ timeframe1Array.push({
   codyLink: "https://github.com/Cody-Howell/SC2024-RetroGame",
   codyStars: 1,
   taftLink: "",
+  taftStars: 0, 
   jesseLink: "",
+  jesseStars: 0, 
+  justinLink: "",
+  justinStars: 0, 
+  jimLink: "",
+  jimStars: 0, 
   starDates: ["6/13/2024", "6/18/2024", "6/21/2024", "No Date Set"],
   dueDate: "6/24/2024"
 });

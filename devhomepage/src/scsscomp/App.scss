@@ -1,9 +1,15 @@
-@use "Library"; @use "Home"; @use "Challenges";
+@use "Library"; @use "Home"; @use "Challenges"; @use "Projects";
+@use "Wiki"; @use "About";
 
 
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+}
 body, html {
   padding: 0;
   margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 #App {
@@ -29,11 +35,13 @@ body, html {
     a {
       text-decoration: none;
       color: black;
-      border: 1px solid white;
-      border-radius: 5px;
+      font-size: 30px;
     }
   }
 }
 
 @include Home.import();
+@include About.import();
 @include Challenges.import();
+@include Projects.import();
+@include Wiki.import();
