@@ -4,7 +4,7 @@ import { HashRouter, Route, Routes, Link } from 'react-router-dom';
 import profilePicture from './ProfilePictureDiscord.png';
 import { Home } from './components/Home';
 import { Challenges } from './components/Challenges.tsx';
-import { Projects } from './components/Projects.js';
+import { Projects } from './components/Projects.tsx';
 import { Wiki } from './components/Wiki.js';
 import { About } from './components/About.js';
 
