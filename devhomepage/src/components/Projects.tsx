@@ -19,6 +19,13 @@ export class Projects extends React.Component {
           such as the games, where we had a week or two to code something. 
         </p>
         <h1>Serious Projects</h1>
+        <Project project={{title: "Data Structures, Algorithms, and Simulations", 
+          link: "https://data.codyhowell.dev", 
+          githubLink: "https://github.com/Cody-Howell/dsaVis",
+          startDate: new Date('2024-06-18'),
+          description: "This website comes from a few classes I took last year. It's intended to be a visualizer for the various data structures we were looking at (as some were quite complicated), as the visualizer we had at the time wasn't great. This is a summer project in the hopes it's more useful to students in those classes than our current version was. ",
+          nestedProjects: []
+        }} />
         <Project project={{title: "Concert Database", 
         link: "https://concerts.codydhowell.com",
         githubLink: "https://github.com/Cody-Howell/SnowConcerts",
@@ -46,7 +53,7 @@ export class Projects extends React.Component {
           link: "https://codydhowell.com/challenges/summer2024/tetris/",
           githubLink: "https://github.com/Cody-Howell/SC2024-RetroGame/tree/main/tetris",
           startDate: new Date('2024-06-14'), 
-          description: "My second (and final) game in this group. As someone who likes Tetris and enjoys the modern movement style, I got.. close in this version. The movement feels a little bit janky, but most things follow modern guideline Tetris (minus T-spins and some rotation specifics). ",
+          description: "My second (and final) game in this group. As someone who likes Tetris and enjoys the modern movement style, I got.. not very close in this version. The movement feels a little bit janky, but most things follow modern guideline Tetris (minus T-spins and some rotation specifics). ",
           nestedProjects: []
         }]
         }} />
