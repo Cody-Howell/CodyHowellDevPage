@@ -1,5 +1,4 @@
 import React from 'react';
-import { Url } from 'url';
 
 type ProjectType = {
   title: string, 
@@ -40,6 +39,14 @@ export class Projects extends React.Component {
           githubLink: "https://github.com/Cody-Howell/SC2024-RetroGame/tree/main/asteroids",
           startDate: new Date('2024-06-12'), 
           description: "Simple challenge to re-create the retro Asteroids game. It's written in React and Typescript, which TS is a bit of a new language for me.",
+          nestedProjects: []
+        }, 
+        {
+          title: "Tetris",
+          link: "https://codydhowell.com/challenges/summer2024/tetris/",
+          githubLink: "https://github.com/Cody-Howell/SC2024-RetroGame/tree/main/tetris",
+          startDate: new Date('2024-06-14'), 
+          description: "My second (and final) game in this group. As someone who likes Tetris and enjoys the modern movement style, I got.. close in this version. The movement feels a little bit janky, but most things follow modern guideline Tetris (minus T-spins and some rotation specifics). ",
           nestedProjects: []
         }]
         }} />
