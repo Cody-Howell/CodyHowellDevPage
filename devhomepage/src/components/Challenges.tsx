@@ -37,8 +37,8 @@ class TimeFrame extends React.Component<{challenges: Array<ChallengeType>, title
       challengeObjects.push(<Challenge challenge={this.props.challenges[i]} key={String(this.props.challenges[i].title)}/>);
     }
     return(
-      <div className='timeFrameElement' onClick={this.handleOpen}>
-        <h1>{this.props.title} {this.state.open ? (<span>&#x25B2;</span>) : (<span>&#x25BC;</span>)}</h1>
+      <div className='timeFrameElement'>
+        <h1 onClick={this.handleOpen}>{this.props.title} {this.state.open ? (<span>&#x25B2;</span>) : (<span>&#x25BC;</span>)}</h1>
         {this.state.open && (challengeObjects)}
       </div>
     )
@@ -70,11 +70,11 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
 
         <h3>GitHub Links</h3>
         <p>As people get their pages up, they will be linked to here: </p>
-        {challenge.taftLink !== "" && (<a href={challenge.taftLink}>Cody's Link {drawStars(challenge.taftStars)}</a>)}
-        {challenge.codyLink !== "" && (<a href={challenge.codyLink}>Cody's Link {drawStars(challenge.codyStars)}</a>)}
-        {challenge.jesseLink !== "" && (<a href={challenge.jesseLink}>Cody's Link {drawStars(challenge.jesseStars)}</a>)}
-        {challenge.justinLink !== "" && (<a href={challenge.justinLink}>Cody's Link {drawStars(challenge.justinStars)}</a>)}
-        {challenge.jimLink !== "" && (<a href={challenge.jimLink}>Cody's Link {drawStars(challenge.jimStars)}</a>)}
+        {challenge.taftLink !== "" && (<><a href={challenge.taftLink}>Taft's Link {drawStars(challenge.taftStars)}</a> <br/></>)}
+        {challenge.codyLink !== "" && (<><a href={challenge.codyLink}>Cody's Link {drawStars(challenge.codyStars)}</a> <br/></>)}
+        {challenge.jesseLink !== "" && (<><a href={challenge.jesseLink}>Jesse's Link {drawStars(challenge.jesseStars)}</a> <br/></>)}
+        {challenge.justinLink !== "" && (<><a href={challenge.justinLink}>Justin's Link {drawStars(challenge.justinStars)}</a> <br/></>)}
+        {challenge.jimLink !== "" && (<a href={challenge.jimLink}>Jim's Link {drawStars(challenge.jimStars)}</a>)}
       </div>
     )
   }
