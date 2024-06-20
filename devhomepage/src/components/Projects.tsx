@@ -24,7 +24,24 @@ export class Projects extends React.Component {
           githubLink: "https://github.com/Cody-Howell/dsaVis",
           startDate: new Date('2024-06-18'),
           description: "This website comes from a few classes I took last year. It's intended to be a visualizer for the various data structures we were looking at (as some were quite complicated), as the visualizer we had at the time wasn't great. This is a summer project in the hopes it's more useful to students in those classes than our current version was. ",
-          nestedProjects: []
+          nestedProjects: [
+          {
+            title: "MENACE!", 
+            link: "https://data.codyhowell.dev/simulation/menace",
+            githubLink: "", 
+            startDate: new Date('2024-06-19'),
+            description: "A simulator of matchboxes that learn how to play Tic-Tac-Toe. ",
+            nestedProjects: []
+          },
+          {
+            title: "100 Prisoner Puzzle", 
+            link: "https://data.codyhowell.dev/simulation/100prisonerpuzzle",
+            githubLink: "", 
+            startDate: new Date('2024-06-18'),
+            description: "A math puzzle to find all the keys (bills) using half the number of guesses than there are boxes. ",
+            nestedProjects: []
+          }
+        ]
         }} />
         <Project project={{title: "Concert Database", 
         link: "https://concerts.codydhowell.com",
@@ -62,7 +79,18 @@ export class Projects extends React.Component {
   }
 }
 
-class Project extends React.Component <{project: ProjectType}, {}> {
+class Project extends React.Component <{project: ProjectType}, {open: boolean}> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false
+    }
+  }
+
+  toggleOpen = () => {
+    this.setState({open: !this.state.open});
+  }
+
   render() {
     let nestedProjects: React.ReactNode[] = [];
     for (let i = 0; i < this.props.project.nestedProjects.length; i++){
@@ -75,7 +103,8 @@ class Project extends React.Component <{project: ProjectType}, {}> {
         {this.props.project.githubLink !== "" && (<a href={this.props.project.githubLink} target='_blank' rel='noreferrer'>Go To GitHub Repo</a>)}
         <p>Start date: {this.props.project.startDate.toLocaleDateString()}</p>
         {this.props.project.description !== "" && (<p>{this.props.project.description}</p>)}
-        {nestedProjects}
+        {nestedProjects.length > 0 && (<h3 onClick={this.toggleOpen} style={{cursor: "pointer"}}>Toggle inner projects</h3>)}
+        {this.state.open && (nestedProjects)}
       </div>
     )
   }
