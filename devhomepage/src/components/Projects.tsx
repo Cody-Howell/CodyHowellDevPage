@@ -19,6 +19,13 @@ export class Projects extends React.Component {
           such as the games, where we had a week or two to code something. 
         </p>
         <h1>Serious Projects</h1>
+        <Project project={{title: "Demo Webpage", 
+          link: "https://demo.codyhowell.dev", 
+          githubLink: "https://github.com/Cody-Howell/DemoProject",
+          startDate: new Date('2024-06-11'),
+          description: "This website displays the current version of my professional prototype website. Currently, it is a warehouse database using React and Firebase. Please reach out if you're interested in your business using it. ",
+          nestedProjects: []
+        }} />
         <Project project={{title: "Data Structures, Algorithms, and Simulations", 
           link: "https://data.codyhowell.dev", 
           githubLink: "https://github.com/Cody-Howell/dsaVis",
@@ -50,7 +57,8 @@ export class Projects extends React.Component {
         description: "A website to host concerts (and a variety of other features) for Snow College. I use React, host files with Google Drive (for now), and have a Firebase system for database features and authentication. In the future, I hope to use a few more JS libraries and have some more complicated projects within this project for the college. I'll be listing those below. ",
         nestedProjects: [{title: "Score Library", link: "https://concerts.codydhowell.com/work/scorelibrary", githubLink: "", startDate: new Date('2024-01-10'), description: "Currently not working as intended; but it's a page that allows you to search through our indexed scores. Start by selecting a part in the top select form; only Jazz and Orchestral scores have been indexed. The form allows you to search the collection by a JS contains() method, so it filters by that subsection for each field.  ", nestedProjects: []}]
         }} />
-      
+
+        {/* This is the "Fun Projects" line so that it's easier to find later on, say when scrolling by */}
         <h1>Fun Projects</h1>
         <Project project={{title: "Summer 2024, Challenge 1", 
         link: "",
