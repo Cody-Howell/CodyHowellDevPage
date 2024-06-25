@@ -52,7 +52,7 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
       <div className='challengeElement' >
         <h2>{challenge.title}: Task #{String(challenge.number)}</h2>
         <p>{challenge.description}</p>
-        <p>For now: Create a GitHub repo with the account (you can use the format "SC2024-<i>challenge</i>") to host your code.</p>
+        <p>For now: Create a GitHub repo with your account (you can use the format "SC2024-<i>challenge</i>") to host your code.</p>
         <p>We're doing 4 stars for each challenge, as listed below. Email me when you complete a new star for your progress to be shown here. </p>
         <ol>
           <li>Hello World program - program compiles and runs, maybe has a button.</li>
