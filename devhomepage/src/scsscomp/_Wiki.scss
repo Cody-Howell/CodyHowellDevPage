@@ -3,5 +3,58 @@
 @mixin import {
   #wikiPage {
     @include Library.mainPageFormat();
+    @include returnLink();
+    .wikiLinks {
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .category-page {
+    @include Library.mainPageFormat();
+    @include returnLink();
+    margin-top: 30px;
+
+    .categoryLinks {
+      display: flex;
+      flex-wrap: wrap;
+
+      .categoryLink {
+        background-color: black;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        font-size: larger;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .topic-page {
+    @include Library.mainPageFormat();
+    margin-top: 10px;
+
+    .code-interface {
+      align-self: center;
+      background-color: rgb(206, 206, 206);
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 0 10px;
+      width: fit-content;
+    }
+
+    @include returnLink();
+  }
+}
+
+@mixin returnLink {
+  .returnLink {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
   }
 }

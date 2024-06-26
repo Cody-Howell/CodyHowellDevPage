@@ -7,6 +7,8 @@ import { Challenges } from './components/Challenges.tsx';
 import { Projects } from './components/Projects.tsx';
 import { Wiki } from './components/Wiki.js';
 import { About } from './components/About.js';
+import CategoryPage from './components/WikiCategoryPage.js';
+import TopicPage from './components/WikiTopicPage.js';
 
 class App extends React.Component {
   render() {
@@ -20,6 +22,8 @@ class App extends React.Component {
             <Route path='/challenges' element={<Challenges />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/wiki' element={<Wiki />} />
+            <Route path="/wiki/:category" element={<CategoryPage />} />
+            <Route path="/wiki/:category/:topic" element={<TopicPage />} />
           </Routes>
         </HashRouter>
       </div>

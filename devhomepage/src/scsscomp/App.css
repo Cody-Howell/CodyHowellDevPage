@@ -94,4 +94,63 @@ body, html {
   padding-left: 10px;
   margin-right: 20px;
   margin-bottom: 40%;
+}
+#wikiPage .returnLink {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+#wikiPage .wikiLinks a {
+  margin-right: 10px;
+}
+
+.category-page {
+  padding-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 40%;
+  margin-top: 30px;
+}
+.category-page .returnLink {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+.category-page .categoryLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-page .categoryLinks .categoryLink {
+  background-color: black;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: larger;
+  color: white;
+  text-decoration: none;
+}
+
+.topic-page {
+  padding-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 40%;
+  margin-top: 10px;
+}
+.topic-page .code-interface {
+  align-self: center;
+  background-color: rgb(206, 206, 206);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0 10px;
+  width: fit-content;
+}
+.topic-page .returnLink {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=App.css.map */
