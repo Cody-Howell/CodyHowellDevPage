@@ -10,6 +10,8 @@ import { UpdateDocument } from "./Firebase Pages/UpdateDocument.ts";
 import { DeleteDoc } from "./Firebase Pages/DeleteDocument.ts";
 import { FirebaseConsole } from "./Firebase Pages/Firebase Console.ts";
 import { CustomDomain } from "./Firebase Pages/Custom Domain.ts";
+import { PreviewPages } from "./Firebase Pages/Preview Pages.ts";
+import { FirebaseCommandLine } from "./Firebase Pages/Firebase CLI.ts";
 
 let FirebaseWiki: LangFrame = {
   title: "Firebase",
@@ -19,12 +21,14 @@ let FirebaseWiki: LangFrame = {
     { title: "Doc Syntax", content: DocSyntax },
     { title: "Collection Syntax", content: CollectionSyntax },
     { title: "Firebase Console", content: FirebaseConsole },
+    { title: "Command Line Firebase", content: FirebaseCommandLine },
     { title: "(SG) Example Class", content: ExampleClass },
     { title: "Reading a Document", content: ReadingDocument },
     { title: "Writing a Document", content: WritingDocument },
     { title: "Updating a Document", content: UpdateDocument },
     { title: "Deleting a Document", content: DeleteDoc },
     { title: "Custom Domain", content: CustomDomain },
+    { title: "Preview Pages", content: PreviewPages },
     
   ]
 }

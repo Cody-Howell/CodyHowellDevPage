@@ -23,15 +23,15 @@ export const FirebaseConsole: Content = {
   seeSimilar: [
     {
       path: "/firebase/command-line-firebase",
-      visibleName: "Firebase Command Line Calls (DNC)"
+      visibleName: "Firebase Command Line Calls"
     },
     {
       path: "/firebase/custom-domain",
       visibleName: "Adding a Custom Domain"
     },
     {
-      path: "/firebase/preview-channels",
-      visibleName: "Preview Channels (DNC)"
+      path: "/firebase/preview-pages",
+      visibleName: "Preview Pages"
     }
   ],
   externalLinks: []
