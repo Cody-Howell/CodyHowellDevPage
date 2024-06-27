@@ -59,8 +59,9 @@ export const FirebaseStructure: Content = {
       visibleName: "Typescript README"
     },
     {
-      path: "/firebase/example-class",
+      path: "/firebase/(sg)-example-class",
       visibleName: "Example Class"
     }
-  ]
+  ],
+  externalLinks: []
 }

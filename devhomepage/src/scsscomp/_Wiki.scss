@@ -7,6 +7,7 @@
     .wikiLinks {
       a {
         margin-right: 10px;
+        font-size: 40px;
       }
     }
   }
@@ -25,10 +26,12 @@
         padding: 10px;
         margin-right: 10px;
         border-radius: 10px;
-        font-size: larger;
+        font-size: large;
         color: white;
         text-decoration: none;
       }
+      .styleGuide {background-color: rgb(186, 0, 0);}
+      .library {background-color: rgb(0, 0, 188);}
     }
   }
 

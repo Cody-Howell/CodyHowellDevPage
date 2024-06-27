@@ -48,5 +48,6 @@ export const ExampleClass: Content = {
     Most functions within Firebase are async calls to the database to do something, so propogating that async call is 
     important. I find that even when I use a non-async call, I still use the async modifier in the method. `
   ],
-  seeSimilar: []
+  seeSimilar: [],
+  externalLinks: []
 }

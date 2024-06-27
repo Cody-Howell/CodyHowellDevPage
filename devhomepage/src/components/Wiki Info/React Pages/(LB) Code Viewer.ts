@@ -34,5 +34,6 @@ export const CodeViewerComponent: Content = {
     padding/margins. It didn't render any empty lines to start, but using the ternary operator and the non-breaking 
     space (&nbsp;), it now can display empty lines for spacing. It's pretty nice.`
   ],
-  seeSimilar: []
+  seeSimilar: [],
+  externalLinks: []
 }

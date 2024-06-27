@@ -21,6 +21,10 @@ type Content = {
   seeSimilar: Array<{
     path: string, 
     visibleName: string
+  }>,
+  externalLinks: Array<{
+    fullPath: string, 
+    visibleName: string
   }>
 }
 

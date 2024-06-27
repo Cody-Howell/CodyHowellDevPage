@@ -30,6 +30,8 @@ class TopicPage extends Component {
     for (let i = 0; i < topicData.content.seeSimilar.length; i++){
       similarPages.push(<><Link to={`/wiki${topicData.content.seeSimilar[i].path}`}>{topicData.content.seeSimilar[i].visibleName}</Link><br/></>)
     }
+
+    let externalLinks = topicData.content.externalLinks.map((value, index) => <><a href={value.fullPath} rel='noreferrer' target='_blank' key={index + "anchor"}>{value.visibleName}</a><br/></>);
     return (
       <div className="topic-page">
         <br/>
@@ -43,6 +45,12 @@ class TopicPage extends Component {
           <>
             <h2>See Related Pages</h2>
             {similarPages}
+          </>
+        )}
+        {topicData.content.externalLinks.length > 0 && (
+          <>
+            <h2>External Links</h2>
+            {externalLinks}
           </>
         )}
       </div>
