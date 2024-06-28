@@ -12,9 +12,9 @@ export const ForVsMapFunction: Content = {
     'let array = incomingArray.map((value, index) => <p key={index}>{value}</p>)'
   ],
   paragraphs: [
-    `This page is just a minor complaint on my part, since before I haven't really tried to work on 
-      map functions and they were confusing to me. This is just a straitforward example (using a bit 
-      of common React syntax) of a use case for either function. `
+    `This page is just a work in progress on my part, since before I haven't really tried to work on 
+      map functions and they were confusing to me. This is a straitforward example (using a bit 
+      of common React syntax) of a use case in both functions. `
   ],
   seeSimilar: [],
   externalLinks: []
