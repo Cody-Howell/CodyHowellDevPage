@@ -18,6 +18,23 @@ timeframe1Array.push({
   starDates: ["6/25/2024", "6/27/2024", "6/30/2024", "No Date Set"],
   dueDate: "7/1/2024"
 });
+timeframe1Array.push({
+  title: "Develop a Productivity App",
+  number: 2,
+  description: "Build a productivity tool for yourself! Some examples are: timers, scheduling, project planning, checklist, etc. It can be built in the web or as an app.",
+  codyLink: "",
+  codyStars: 0,
+  taftLink: "",
+  taftStars: 0, 
+  jesseLink: "",
+  jesseStars: 0, 
+  justinLink: "",
+  justinStars: 0, 
+  jimLink: "",
+  jimStars: 0, 
+  starDates: ["7/3/2024", "7/5/2024", "7/15/2024", "No Date Set"],
+  dueDate: "7/15/2024"
+});
 
 
 

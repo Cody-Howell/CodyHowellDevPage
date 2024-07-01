@@ -34,7 +34,7 @@ class TimeFrame extends React.Component<{challenges: Array<ChallengeType>, title
   render() {
     let challengeObjects: React.ReactNode[] = [];
     for (let i = this.props.challenges.length - 1; i >= 0; i--){
-      challengeObjects.push(<Challenge challenge={this.props.challenges[i]} key={String(this.props.challenges[i].title)}/>);
+      challengeObjects.push(<><hr/><Challenge challenge={this.props.challenges[i]} key={String(this.props.challenges[i].title)}/></>);
     }
     return(
       <div className='timeFrameElement'>
@@ -52,7 +52,7 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
       <div className='challengeElement' >
         <h2>{challenge.title}: Task #{String(challenge.number)}</h2>
         <p>{challenge.description}</p>
-        <p>For now: Create a GitHub repo with your account (you can use the format "SC2024-<i>challenge</i>") to host your code.</p>
+        <p>Create a GitHub repo with your account (you can use the format "SC2024-<i>challenge</i>") to host your code.</p>
         <p>We're doing 4 stars for each challenge, as listed below. Email me when you complete a new star for your progress to be shown here. </p>
         <ol>
           <li>Hello World program - program compiles and runs, maybe has a button.</li>

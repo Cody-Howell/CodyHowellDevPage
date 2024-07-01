@@ -7,7 +7,7 @@ export const SortArrayOfObjects: Content = {
     ' * @param {string} filter - Value to compare',
     ' * @param {boolean} ascBool - True: Z-A',
     ' */',
-    'function sortData(data: Array<Object>, filter: string, ascBool: boolean) : Array<Object>{',
+    'function sortData(data: Array<Object>, filter: string, ascBool: boolean): Array<Object>{',
     '  let work = data;',
     '  let output: Array<Object> = [];',
     '  if (ascBool){',
