@@ -70,11 +70,11 @@ class Challenge extends React.Component <{challenge: ChallengeType}, {}> {
 
         <h3>GitHub Links</h3>
         <p>As people get their pages up, they will be linked to here: </p>
-        {challenge.taftLink !== "" && (<><a href={challenge.taftLink}>Taft's Link {drawStars(challenge.taftStars)}</a> <br/></>)}
-        {challenge.codyLink !== "" && (<><a href={challenge.codyLink}>Cody's Link {drawStars(challenge.codyStars)}</a> <br/></>)}
-        {challenge.jesseLink !== "" && (<><a href={challenge.jesseLink}>Jesse's Link {drawStars(challenge.jesseStars)}</a> <br/></>)}
-        {challenge.justinLink !== "" && (<><a href={challenge.justinLink}>Justin's Link {drawStars(challenge.justinStars)}</a> <br/></>)}
-        {challenge.jimLink !== "" && (<a href={challenge.jimLink}>Jim's Link {drawStars(challenge.jimStars)}</a>)}
+        {challenge.taftLink !== "" && (<><a href={challenge.taftLink} target="_blank" rel='noreferrer noopener'>Taft's Link {drawStars(challenge.taftStars)}</a> <br/></>)}
+        {challenge.codyLink !== "" && (<><a href={challenge.codyLink} target="_blank" rel='noreferrer noopener'>Cody's Link {drawStars(challenge.codyStars)}</a> <br/></>)}
+        {challenge.jesseLink !== "" && (<><a href={challenge.jesseLink} target="_blank" rel='noreferrer noopener'>Jesse's Link {drawStars(challenge.jesseStars)}</a> <br/></>)}
+        {challenge.justinLink !== "" && (<><a href={challenge.justinLink} target="_blank" rel='noreferrer noopener'>Justin's Link {drawStars(challenge.justinStars)}</a> <br/></>)}
+        {challenge.jimLink !== "" && (<a href={challenge.jimLink} target="_blank" rel='noreferrer noopener'>Jim's Link {drawStars(challenge.jimStars)}</a>)}
       </div>
     )
   }
