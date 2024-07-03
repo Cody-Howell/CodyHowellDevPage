@@ -12,7 +12,7 @@ export class Challenges extends React.Component {
         <h1>Challenges</h1>
         <p>This page will hold the links to GitHub repositories for each of the projects we do. Currently, there is only one group,
           the Summer 2024 challenge group, consisting of Taft, Cody, Jesse, Justin, and Jim. Challenges will be updated as time goes on, 
-          and you can email me your progress update at updates@codyhowell.dev to adjust the challenge. </p>
+          and you can email me your progress update at updates@codyhowell.dev to adjust this page. </p>
           {renderArray}
       </div>
     );

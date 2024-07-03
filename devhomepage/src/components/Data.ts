@@ -10,7 +10,7 @@ timeframe1Array.push({
   taftLink: "",
   taftStars: 0, 
   jesseLink: "https://github.com/eisbaerBorealis/personal/tree/master/learning/summer-challenges/ch1-tetris",
-  jesseStars: 1, 
+  jesseStars: 3, 
   justinLink: "",
   justinStars: 0, 
   jimLink: "",
@@ -32,8 +32,25 @@ timeframe1Array.push({
   justinStars: 0, 
   jimLink: "",
   jimStars: 0, 
-  starDates: ["7/3/2024", "7/5/2024", "7/15/2024", "No Date Set"],
-  dueDate: "7/15/2024"
+  starDates: ["7/3/2024", "7/10/2024", "7/15/2024", "7/31/2024"],
+  dueDate: "7/3/2024"
+});
+timeframe1Array.push({
+  title: "Create a Board Game",
+  number: 3,
+  description: "Make a board game! You can make something new or simply implement an existing game, such as checkers or chess, or something more exotic like Hex Chess. ",
+  codyLink: "",
+  codyStars: 0,
+  taftLink: "",
+  taftStars: 0, 
+  jesseLink: "",
+  jesseStars: 0, 
+  justinLink: "",
+  justinStars: 0, 
+  jimLink: "",
+  jimStars: 0, 
+  starDates: ["7/17/2024", "7/24/2024", "7/31/2024", "8/15/2024"],
+  dueDate: "7/31/2024"
 });
 
 
