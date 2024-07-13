@@ -107,10 +107,10 @@ export class Projects extends React.Component {
             nestedProjects: []
           }, {
             title: "Summer 2024, Challenge 3",
-            link: "",
+            link: "https://codydhowell.com/challenges/summer2024/chess/",
             githubLink: "https://github.com/Cody-Howell/SC2024-BoardGame",
             startDate: new Date('2024-07-05'),
-            description: "I made Chess! mostly. It doesn't have En Passsant or castling. I attempted to code a chess bot with TensorFlow instead.",
+            description: "I made Chess! mostly. It doesn't have En Passsant or castling. I attempted to code a chess bot with TensorFlow instead, and still have some bugs to fix.",
             nestedProjects: []
           }
           ]
