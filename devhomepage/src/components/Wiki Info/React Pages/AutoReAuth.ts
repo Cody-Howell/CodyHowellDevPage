@@ -25,7 +25,7 @@ export const AutoReAuth: Content = {
 '  // Custom logic for my state',
 '  let fullUser = await Auth.getUserInformation(userUID);',
 '  let sl = parseInt(fullUser.sl);',
-'  console.log(`User SL: ${sl}`);',
+'  console.log(`User SL: {sl}`);',
 '  this.setState({',
 '    user: {',
 '      uid: userUID,',

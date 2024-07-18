@@ -6,7 +6,7 @@ export const DefaultAuthClass: Content = {
 `  static sendSignInLinkToEmail(email) {`,
 `    const actionCodeSettings = {`,
 `      // URL you want to redirect back to`,
-`      url: 'https://example.com',`,
+`      url: 'https://example.com/finishSignIn',`,
 `      handleCodeInApp: true,`,
 `    };`,
 ``,
