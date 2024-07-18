@@ -12,6 +12,7 @@ import { FirebaseConsole } from "./Firebase Pages/Firebase Console.ts";
 import { CustomDomain } from "./Firebase Pages/Custom Domain.ts";
 import { PreviewPages } from "./Firebase Pages/Preview Pages.ts";
 import { FirebaseCommandLine } from "./Firebase Pages/Firebase CLI.ts";
+import { DefaultAuthClass } from "./Firebase Pages/DefaultAuthClass.ts";
 
 let FirebaseWiki: LangFrame = {
   title: "Firebase",
@@ -29,7 +30,7 @@ let FirebaseWiki: LangFrame = {
     { title: "Deleting a Document", content: DeleteDoc },
     { title: "Custom Domain", content: CustomDomain },
     { title: "Preview Pages", content: PreviewPages },
-    
+    { title: "(LB) Default Auth Class", content: DefaultAuthClass },    
   ]
 }
 
