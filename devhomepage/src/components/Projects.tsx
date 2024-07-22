@@ -42,6 +42,21 @@ export class Projects extends React.Component {
             //   nestedProjects: [] }
           ]
         }} />
+        <Project project={{
+          title: "Requests",
+          link: "",
+          githubLink: "",
+          startDate: new Date('2024-07-15'),
+          description: "Using my site request.codyhowell.dev, this is all the sites I built for my family/friends. They come up with the idea, I try to make it happen. ",
+          nestedProjects: [
+            { title: "Big 12 Travel Guide", 
+              link: "https://big12travelguide.web.app/", 
+              githubLink: "", 
+              startDate: new Date('2024-07-15'), 
+              description: "A guide for people traveling to sports in the Big 12 Conference, with locations to go (food, entertainment, nightlife, seasonal, etc.), and some info about each college.", 
+              nestedProjects: [] }
+          ]
+        }} />
 
         {/* This is the "Fun Projects" line so that it's easier to find later on, say when scrolling by */}
         <h1>Fun Projects</h1>
@@ -110,7 +125,7 @@ export class Projects extends React.Component {
             link: "https://codydhowell.com/challenges/summer2024/chess/",
             githubLink: "https://github.com/Cody-Howell/SC2024-BoardGame",
             startDate: new Date('2024-07-05'),
-            description: "I made Chess! mostly. It doesn't have En Passsant or castling. I attempted to code a chess bot with TensorFlow instead, and still have some bugs to fix.",
+            description: "I made Chess! mostly. It doesn't have En Passsant or castling. I attempted to code a chess bot with TensorFlow instead (it didn't work out), and still have some bugs to fix.",
             nestedProjects: []
           }
           ]
